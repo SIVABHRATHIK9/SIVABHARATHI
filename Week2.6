@@ -1,0 +1,11 @@
+n=int(input())
+bin=0
+bin+=n&1
+n=n>>1
+bin+=n&1
+n=n>>1
+bin+=n&1
+n=n>>1
+bin+=n&1
+n=n>>1
+print(bin)
