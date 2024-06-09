@@ -1,0 +1,8 @@
+def ispowof2(n):
+    if n<=0:
+        return False
+    elif n%2==0:
+        return ispowof2(n//2)
+    return n==1
+n=int(input())
+print(ispowof2(n))
