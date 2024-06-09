@@ -1,0 +1,28 @@
+array = [0] * 10
+for i in range(10):
+    array[i] = int(input())
+    
+new_item = int(input())
+
+print(f"ITEM to be inserted:{new_item}")
+
+new_array = [0] * 11
+inserted = False
+j = 0
+
+for i in range(10):
+    if not inserted and new_item < array[i]:
+        new_array[j] = new_item
+        j += 1
+        inserted = True
+    new_array[j] = array[i]
+    j += 1
+
+if not inserted:
+    new_array[j] = new_item
+
+print("After insertion array is:")
+for item in new_array:
+    print(item)
+
+
