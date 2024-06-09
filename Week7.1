@@ -1,0 +1,22 @@
+n=int(input())
+list1=[]
+for i in range(n):
+    str1=input()
+    present=0
+    for row in["qwertyuiop","asdfghjkl","zxcvbnm"]:
+        flag=1
+        for j in str1:
+            if j.lower() not in row:
+                flag=0
+                break
+        if flag==1:
+            present=1
+            break
+    if present==1:
+        list1.append(str1)
+if(not list1):
+    print("No words")
+else:
+    for i in list1:
+        print(i)
+
