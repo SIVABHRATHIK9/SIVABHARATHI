@@ -1,0 +1,13 @@
+def count_frequency(arr):
+    frequency_dict = {}
+    for num in arr:
+        frequency_dict[num] = frequency_dict.get(num, 0) + 1
+
+    sorted_frequency = sorted(frequency_dict.items())
+
+    for element, freq in sorted_frequency:
+        print(element,freq)
+ar = list(map(int, input().split()))
+count_frequency(ar)
+
+
