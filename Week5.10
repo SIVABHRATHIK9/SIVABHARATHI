@@ -1,0 +1,7 @@
+n=input()
+keyword={"break","case","continue","default","defer","else","for","func","goto","if","map","range","return","struct","type","var"}
+if n in keyword:
+    print("%s is a keyword"%n)
+else:
+    print("%s is not a keyword"%n)
+
