@@ -1,0 +1,17 @@
+n=int(input())
+temp=n
+while(n!=0):
+   rem=n%10
+   n=n//10
+   count+=1
+n=temp
+sum=0
+for i in range(0,count):
+     l=n%10
+     p=l**(count-i)
+     sum=sum+p
+     n=n//10
+if(sum==temp):
+     print("Yes")
+else:
+    print("No")
